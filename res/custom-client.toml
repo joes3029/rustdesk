@@ -1,0 +1,48 @@
+[custom]
+# Your server configuration (embedded in the client)
+relay-server = "rustdesk.symphonypc.com:21117"
+id-server = "rustdesk.symphonypc.com:21116"
+api-server = "http://rustdesk.symphonypc.com:21114"
+key = "007nUjw5hXZ0DNDlHnKqud0VU8kOWkh9Y45w=="
+
+# Branding
+custom-app-name = "Symphony Satweb Remote Support"
+
+# Optional: disable certain features
+# disable-settings = false
+# disable-ab = false
+# disable-account = true
+default-permissions = "keyboard,mouse,clipboard"
+
+[options]
+enable-direct-connection = false
+
+[options.ui]
+hide-server-settings = true
+
+[options.startup]
+# Don't auto-start with Windows (for run-once portable use)
+auto-start = false
+
+[options.connection]
+connection-timeout = 30  # seconds
+
+[options.recording]
+record-path = "C:\\Support_Sessions"
+
+[options.access]
+# Show simplified acceptance prompt
+# Options: "accept-reject", "accept-once-reject", "accept-permanent-reject"
+prompt-style = "accept-once-reject" 
+
+[options.notifications]
+# Notify user when connection is active
+show-connection-notification = true
+show-elevation-notification = true 
+
+[options.messages]
+# Custom message shown when you request access
+connection-request-message = "Symphony Satweb Support is requesting access to assist you. Click Accept to continue."
+
+# Message shown when requesting elevation
+elevation-request-message = "Symphony Satweb Support needs administrator access to complete this task."
